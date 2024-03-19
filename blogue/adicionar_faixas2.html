@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="shortcut icon" href="../Imagens/logo2.jpg" type="image/x-icon">
+    <script src="../JavaScript.js"></script>
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" id="inicio">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="home.html"><img class="" src="../Imagens/Wasom Upfy.png" alt=""
+                        width="80px" height="65px"
+                        style="border-radius: 50%; background: linear-gradient(-360deg, black, #c71585);"></a>
+                <!-- menu sanduíche (para smartphone) -->
+                <button class="navbar-toggler fundo_icon" data-bs-toggle="collapse" data-bs-target="#menu-links">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-list fundo_menu" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </span>
+                </button>
+                <style>
+                    @media screen and (min-width: 1000px) {
+
+                        .container_ul {
+                            display: flex;
+                            justify-content: right;
+                        }
+
+                    }
+
+                    @media screen and (max-width: 759px) {
+
+                        .container_img {
+                            justify-content: center;
+                            margin-top: 15px;
+                            margin-bottom: 20px;
+                        }
+
+                        .list_link {
+                            display: flex;
+                            flex-direction: column;
+
+                        }
+
+                        .get-in {
+                            width: 100%;
+
+                        }
+                    }
+                </style>
+                <!-- menu de links -->
+                <div class="collapse navbar-collapse container_ul" id="menu-links">
+
+                    <div>
+                        <ul class="navbar-nav me-auto">
+
+                            <!-- Link home -->
+                            <li class="nav-item"><a style="color:rgba(255, 255, 255, 0.425);" href="#" class="nav-link">
+                                Blogue</a></li>
+
+                            <li class="nav-item"><a href="perfil.html" class="nav-link color">Perfil</a></li>
+
+                            <li class="nav-item"><a href="home.html#ouvidos" class="nav-link color">+ Ouvidos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link color">Rendimentos</a></li>
+                            <li class="nav-item"><a href="estatisticas.html" class="nav-link color">Estatísticas</a>
+                            </li>
+
+                            <li class="nav-item"><a href="pagamentos.html" class="nav-link color">Pagamentos</a></li>
+                            <li class="nav-item"><a href="Footer/contacta_nos.html"
+                                    class="nav-link color">Contacta-nos</a></li>
+                            <li class="nav-item dropdown">
+
+                                <!-- botão do menu suspenso -->
+                                <a class="nav-link dropdown-toggle color" href="detalhes_album.html" role="button"
+                                    data-bs-toggle="dropdown">
+                                    + Músicas
+                                </a>
+
+                                <!-- links ocultos -->
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="itens_music" href="detalhes_album.html">
+                                            Adicionar Álbum</a>
+                                    </li>
+                                    <li>
+                                        <a class="itens_music" href="#" style="color:rgba(255, 255, 255, 0.425);">
+                                            Adicionar Faixas</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+
+                            <div class="list_link2">
+                                <li class="nav-item"><a href="#" class="nav-link color get-in2" data-bs-toggle="modal"
+                                        data-bs-target="#meu-primeiro-modal">Terminar Sessão</a></li>
+                            </div>
+
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <style>
+        .fundo {
+            height: 500px;
+        }
+
+        @media screen and (max-width: 790px) {
+            .fundo {
+                height: 400px;
+            }
+
+            .container-form {
+                width: 90%;
+            }
+
+            .container-button,
+            .container-button2 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+
+        }
+
+        .link_US {
+            color: white;
+        }
+
+        .link_US:hover {
+            background-color: rgba(255, 255, 255, 0.425);
+            color: white;
+        }
+
+        .link_US:active {
+            background-color: rgba(255, 255, 255, 0.158);
+            color: white;
+        }
+    </style>
+    <div>
+        <div class="center fundo">
+            <div class=" container-form">
+                <form action="" method="post" class="form-cadastro">
+                    <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <h2>ADICIONANDO MÚSICA</h2>
+                        <div><img src="../Imagens/cadastro1.png" class="img-fluid" alt="" height="70px"></div>
+                    </div>
+                    <hr>
+
+                    <label for="data_hora">Data e a Hora de Distribuição</label>
+                    <input type="datetime-local" name="" id="data_hora">
+
+                    <a href="#" class="input link_US" style="align-items: center; text-align: center;"
+                        data-bs-toggle="modal" data-bs-target="#meu-primeiro-modal"><label for="nome">Selecionar As
+                            Plataformas</label></a>
+
+                    <hr>
+                    <div class="container-button">
+                        <a href="adicionar_faixas.html" class="link_button">Voltar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <footer style="padding: 0 0 20px 0;">
+        <div class="respons_grid"
+            style="display: flex; gap: 30px; justify-content: center; margin-top: 10px; flex-wrap: wrap; align-items: center;">
+            <a href="https://facebook.com/wasom.official_" target="_blank"><img class="hight" style="height: 50px;"
+                    src="../Imagens/facebook.png" alt=""></a>
+            <a href="https://instagram.com/wasomupfy_" target="_blank"><img class="hight" style="height: 50px;"
+                    src="../Imagens/instagram.png" alt=""></a>
+            <a href="https://open.spotify.com/user/31k2nxsblwvufx5lxgbn5lc3d4sq?si=5QbkU1dhRSOwr6pQd4-XLw_"
+                target="_blank"><img class="hight" style="height: 50px;" src="../Imagens/spotify.png" alt=""></a>
+            <a href="https://whatsapp.com/channel/0029VaCEDqo59PwWpU0nGa04_" target="_blank"><img class="hight"
+                    style="height: 50px;" src="../Imagens/whatsapp.png" alt=""></a>
+            <a href="https://threads.net/@wasomupfy_" target="_blank"><img class="hight"
+                    style="height: 60px; border-radius: 50%;" src="../Imagens/threads.png" alt=""></a>
+            <a href="https://youtube.com/@WasomUpfy" target="_blank"><img class="hight" style="height: 50px;"
+                    src="../Imagens/youtube.png" alt=""></a>
+        </div>
+        <hr style="background-color: #ff00a2;">
+
+        <div class="container_footer">
+            <div class="footer container">
+
+                <div class="sobre">
+                    <h4 class="cor_tema">Sobre</h4>
+                    <a href="Footer/sobre.html" target="_blank">Sobre</a>
+                    <a href="home.html">Blogue</a>
+                </div>
+
+
+                <div class="central_apoio">
+                    <h4 class="cor_tema">Central de Apoio</h4>
+                    <a href="Footer/contacta_nos.html">Contacta-nos</a>
+                    <h6 style="color: white;">info_wasom_upfy_2024@gmail.com</h6>
+                </div>
+            </div>
+
+        </div>
+        <hr style="background-color: #ff00a2;">
+
+        <div class="footer_end"
+            style="display: flex; justify-content: space-around; align-items: center; padding: 5px;">
+            <div>
+                <p></p>
+                <p style="color: white;"></p>
+                <p style="color: white;">&copy; Copyright 2024 <br><strong><a href="" target="_blank">Voosoft (click
+                            aqui para acessar o Linkedin)</a> </strong></p>
+            </div>
+
+            <div style="display: flex; gap: 20px;">
+                <a href="Footer/termos_de_uso.html" target="_blank">Termos de Uso</a>
+                <a href="Footer/politica_de_privacidade.html" target="_blank">Privacidade</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>
+
+<div class="modal fade container" id="meu-primeiro-modal" tabindex="-1">
+    <!-- caixa de diálogo -->
+    <div class="modal-dialog">
+        <!-- conteúdo do modal -->
+        <div class="modal-content fundo_modal">
+            <!-- cabeçalho do modal -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="titulo-modal">
+                    <a class="navbar-brand me-5" href="#"><img class="" src="../Imagens/Wasom Upfy.png" alt=""
+                            width="80px" height="65px"
+                            style="border-radius: 50%; background: linear-gradient(-360deg, black, #c71585);"></a>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- botão fechar: x -->
+            </div>
+
+            <style>
+                .checkboxInput {
+                    padding: 500px;
+                }
+            </style>
+            <!-- corpo do modal -->
+            <div class="modal-body">
+                <label for="spotify" class="input link_US" style="width: 100%; text-align: center; align-items: center;"><input
+                        class="checkboxInput" type="checkbox" name="" id="spotify"
+                        style="font-size: 100px; margin-right: 10px; padding: 30px;"> <img style="height: 50px;"
+                        src="../Imagens/spotify.png" alt=""></label>
+
+                <label for="apple_music" class="input link_US" style="width: 100%; text-align: center; align-items: center;"><input
+                        type="checkbox" name="" id="apple_music" style="font-size: 100px; margin-right: 10px; padding: 30px;"> <img
+                        style="height: 50px;" src="../Imagens/apple_music.png" alt=""></label>
+
+                <label for="youtube" class="input link_US" style="width: 100%; text-align: center; align-items: center;"><input
+                        type="checkbox" name="" id="youtube" style="font-size: 100px; margin-right: 10px; padding: 30px;"> <img
+                        style="height: 50px;" src="../Imagens/youtube.png" alt=""></label>
+
+                <label for="deezer" class="input link_US" style="width: 100%; text-align: center; align-items: center;"><input
+                        type="checkbox" name="" id="deezer" style="font-size: 100px; margin-right: 10px; padding: 30px;"> <img
+                        style="height: 50px;" src="../Imagens/deezer.png" alt=""></label>
+
+                <label for="tidal" class="input link_US" style="width: 100%; text-align: center; align-items: center;"><input
+                        type="checkbox" name="" id="tidal" style="font-size: 100px; margin-right: 10px; padding: 30px;"> <img
+                        style="height: 50px; border-radius: 50px;" src="../Imagens/tidal.png" alt=""></label>
+
+                <label for="amazon_music" class="input link_US" style="width: 100%; text-align: center; align-items: center;"><input
+                        type="checkbox" name="" id="amazon_music" style="font-size: 100px; margin-right: 10px; padding: 30px;"> <img
+                        style="height: 55px; border-radius: 100%;" src="../Imagens/amazon_music.png" alt=""></label>
+
+                <label for="shazam" class="input link_US" style="width: 100%; text-align: center; align-items: center;"><input
+                        type="checkbox" name="" id="shazam" style="font-size: 100px; margin-right: 10px; padding: 30px;"> <img
+                        style="height: 50px;" src="../Imagens/shazam.png" alt=""></label>
+
+                <label for="itunes" class="input link_US" style="width: 100%; text-align: center; align-items: center;"><input
+                        type="checkbox" name="" id="itunes" style="font-size: 100px; margin-right: 10px; padding: 30px;"> <img
+                        style="height: 50px;" src="../Imagens/itunes.png" alt=""></label>
+            </div>
+
+            <!-- rodapé do modal -->
+            <div class="modal-footer">
+
+                <a href="dados_US.html"><button type="button"
+                        class="btn btn-primary">Enviar</button><!-- botão fechar --></a>
+
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</a></button>
+
+            </div>
+
+        </div> <!-- /modal-content -->
+    </div> <!-- /modal-dialog -->
+</div>
+
+<div class="modal fade container" id="meu-segundo-modal" tabindex="-1">
+    <!-- caixa de diálogo -->
+    <div class="modal-dialog">
+        <!-- conteúdo do modal -->
+        <div class="modal-content fundo_modal">
+            <!-- cabeçalho do modal -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="titulo-modal">
+                    <a class="navbar-brand me-5" href="#"><img class="" src="../Imagens/Wasom Upfy.png" alt=""
+                            width="80px" height="65px"
+                            style="border-radius: 50%; background: linear-gradient(-360deg, black, #c71585);"></a>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- botão fechar: x -->
+            </div>
+
+            <!-- corpo do modal -->
+            <div class="modal-body">
+                <h4 style="text-align: center; color: white;">Tens a Certeza que queres Terminar a Sessão?</h4>
+            </div>
+
+            <!-- rodapé do modal -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary"><a style="text-decoration: none; color: white;"
+                        href="../index.html">Sim</a></button>
+                <button type="button" class="btn btn-secondary"
+                    data-bs-dismiss="modal">Não</button><!-- botão fechar -->
+
+            </div>
+
+        </div> <!-- /modal-content -->
+    </div> <!-- /modal-dialog -->
+</div>
+
+</html>

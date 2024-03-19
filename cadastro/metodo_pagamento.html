@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metodo de Pagamento</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../Imagens/logo2.jpg" type="image/x-icon">
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="../estilo.css">
+    <script src="../JavaScript/JS.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" id="inicio">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="../index.html"><img class="" src="../Imagens/Wasom Upfy.png" alt="" width="80px"
+                    height="65px" style="border-radius: 50%; background: linear-gradient(-360deg, black, #c71585);"></a>
+                <!-- menu sanduíche (para smartphone) -->
+                <button class="navbar-toggler fundo_icon" data-bs-toggle="collapse" data-bs-target="#menu-links">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list fundo_menu" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                          </svg>
+                    </span>
+                </button>
+                <style>
+                    @media screen and (min-width: 1000px) {
+
+                        .container_ul {
+                            display: flex;
+                            justify-content: right;
+                        }
+
+                    }
+
+                    @media screen and (max-width: 759px) {
+
+                        .container_img {
+                            justify-content: center;
+                            margin-top: 15px;
+                            margin-bottom: 20px;
+                        }
+
+                        .list_link {
+                            display: flex;
+                            flex-direction: column;
+
+                        }
+
+                        .get-in {
+                            width: 100%;
+
+                        }
+                    }
+                   
+                </style>
+                <!-- menu de links -->
+                <div class="collapse navbar-collapse container_ul" id="menu-links">
+
+                    <div>
+                        <ul class="navbar-nav me-auto">
+
+                            <!-- Link home -->
+                            <li class="nav-item"><a href="../index.html" class="nav-link color">
+                                    Início</a></li>
+
+                                    <li class="nav-item"><a href="../Footer/sobre.html" class="nav-link color">
+                                        Sobre</a></li>
+
+                            <li class="nav-item"><a href="../index.html#planos" class="nav-link color">Planos e
+                                    Preços</a></li>
+
+
+                            <li class="nav-item"><a href="../index.html#ferramentas"
+                                    class="nav-link color">Ferramentas</a>
+                            </li>
+                            <div class="list_link">
+                                <li class="nav-item"><a href="../Login/conecta_se.html" class="nav-link color get-in">Login</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link  get-in"
+                                        style="color:rgba(255, 255, 255, 0.425); border: rgba(255, 255, 255, 0.425) solid 1px;">Inscreve-se</a>
+                                </li>
+                            </div>
+
+
+                        </ul>
+                    </div>
+                    <!-- logo e link alinhados à esquerda -->
+                    <!-- /navbar-nav -->
+
+                    <!-- alinhado à direita -->
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <style>
+        @media screen and (max-width: 790px) {
+            .container-form {
+                width: 90%;
+            }
+
+            .container-button,
+            .container-button2 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+
+        }
+    </style>
+    <div>
+        <div class="center fundo">
+            <div class="container container-form">
+                <form action="" method="post" class="form-cadastro">
+                    <legend>Escolha o Metodo de Pagamento</legend>
+                    <hr>
+                    <a class="input link_pagamento" href="">Multicaixa Express</a>
+                    <a class="input link_pagamento" href="">Stripe</a>
+                    <hr>
+
+                    <div class="container-button container">
+                        <a href="pacote_distribuicao.html" class="link_button">Voltar</a>
+
+                </form>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+
+</html>

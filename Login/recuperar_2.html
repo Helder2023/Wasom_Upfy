@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Senha</title>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../Imagens/logo2.jpg" type="image/x-icon">
+
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+
+    <script src="../JavaScript.js"></script>
+    <link rel="stylesheet" href="../estilo.css">
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg" id="inicio">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="../index.html"><img class="" src="../Imagens/Wasom Upfy.png" alt=""
+                        width="80px" height="65px"
+                        style="border-radius: 50%; background: linear-gradient(-360deg, black, #c71585);"></a>
+                <!-- menu sanduíche (para smartphone) -->
+                <button class="navbar-toggler fundo_icon" data-bs-toggle="collapse" data-bs-target="#menu-links">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-list fundo_menu" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </span>
+                </button>
+                <style>
+                    @media screen and (min-width: 1000px) {
+
+                        .container_ul {
+                            display: flex;
+                            justify-content: right;
+                        }
+
+                    }
+
+                    @media screen and (max-width: 759px) {
+
+                        .container_img {
+                            justify-content: center;
+                            margin-top: 15px;
+                            margin-bottom: 20px;
+                        }
+
+                        .list_link {
+                            display: flex;
+                            flex-direction: column;
+
+                        }
+
+                        .get-in {
+                            width: 100%;
+
+                        }
+                    }
+                </style>
+                <!-- menu de links -->
+                <div class="collapse navbar-collapse container_ul" id="menu-links">
+
+                    <div>
+                        <ul class="navbar-nav me-auto">
+
+                            <!-- Link home -->
+                            <li class="nav-item"><a href="../index.html" class="nav-link color">
+                                    Início</a></li>
+
+                            <li class="nav-item"><a href="../Footer/sobre.html" class="nav-link color">
+                                    Sobre</a></li>
+
+                            <li class="nav-item"><a href="../Footer/contacta_nos.html" class="nav-link color">
+                                    Contacta-nos</a></li>
+
+                            <li class="nav-item"><a href="../index.html#planos" class="nav-link color">Planos e
+                                    Preços</a></li>
+
+
+                            <li class="nav-item"><a href="../index.html#ferramentas"
+                                    class="nav-link color">Ferramentas</a>
+                            </li>
+                            <div class="list_link">
+                                <li class="nav-item"><a href="#" class="nav-link get-in"
+                                        style="color:rgba(255, 255, 255, 0.425); border: rgba(255, 255, 255, 0.425) solid 1px;">Login</a>
+                                </li>
+                                <li class="nav-item"><a href="../cadastro/cadastro.html"
+                                        class="nav-link color get-in">Inscreve-se</a>
+                                </li>
+                            </div>
+
+
+                        </ul>
+                    </div>
+                    <!-- logo e link alinhados à esquerda -->
+                    <!-- /navbar-nav -->
+
+                    <!-- alinhado à direita -->
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <div>
+        <div class="center fundo">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <div id="container_codigo">
+                    <legend>Código de Recuperação</legend>
+                    <h4 id="cod">12345</h4>
+
+                </div>
+                <div class="container container-form">
+
+                    <form action="" method="post" class="form-cadastro">
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <h2>RECUPERAR SENHA</h2>
+                            <div><img src="../Imagens/codigo de verificacao.png" class="img-fluid" alt="" height="70px">
+                            </div>
+                        </div>
+
+                        <hr>
+                        <label for="codigo"><legend>Insira o codigo de acesso que foi enviado no seu E-mail</legend></label>
+                        <input type="number" name="codigo" id="codigo" placeholder="Código de Recuperação">
+
+                        <hr>
+                        <div class="container-button2">
+                            <div class="container-button">
+
+                                <a href="recuperar_1.html" class="link_button">Voltar</a>
+                                <a href="recuperar_3.html" class="link_button">Avançar</a>
+
+                                <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="link_button"
+                                    style="background-color: rgb(132, 22, 59);"><img src="../Imagens/gmail.png" alt=""
+                                        srcset="" style="height: 28px;"></a>
+
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <style>
+        .fundo {
+            height: 450px;
+        }
+
+        @media screen and (max-width: 790px) {
+            .fundo {
+                height: 550px;
+            }
+
+            .container-form,
+            #container_codigo {
+                width: 100%;
+            }
+
+            .container-button,
+            .container-button2 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+        }
+    </style>
+    <footer style="padding: 0 0 20px 0;">
+        <div
+            style="display: flex; gap: 30px; justify-content: center; margin-top: 10px; flex-wrap: wrap; align-items: center;">
+            <a href="https://facebook.com/wasom.official_" target="_blank"><img class="hight" style="height: 50px;"
+                    src="../Imagens/facebook.png" alt=""></a>
+            <a href="https://instagram.com/wasomupfy_" target="_blank"><img class="hight" style="height: 50px;"
+                    src="../Imagens/instagram.png" alt=""></a>
+            <a href="https://open.spotify.com/user/31k2nxsblwvufx5lxgbn5lc3d4sq?si=5QbkU1dhRSOwr6pQd4-XLw_"
+                target="_blank"><img class="hight" style="height: 50px;" src="../Imagens/spotify.png" alt=""></a>
+            <a href="https://whatsapp.com/channel/0029VaCEDqo59PwWpU0nGa04_" target="_blank"><img class="hight"
+                    style="height: 50px;" src="../Imagens/whatsapp.png" alt=""></a>
+            <a href="https://threads.net/@wasomupfy_" target="_blank"><img class="hight"
+                    style="height: 60px; border-radius: 50%;" src="../Imagens/threads.png" alt=""></a>
+            <a href="https://youtube.com/@WasomUpfy" target="_blank"><img class="hight" style="height: 50px;"
+                    src="../Imagens/youtube.png" alt=""></a>
+        </div>
+        <hr style="background-color: #ff00a2;">
+
+        <div class="container_footer">
+            <div class="footer container">
+
+                <div class="servicos">
+                    <h4 class="cor_tema">Serviços</h4>
+                    <a href="../index.html#ferramentas">Ferramentas</a>
+                    <a href="../index.html#planos">Planos e Preços</a>
+                    <a href="" target="_blank">Parceiros de Distribuição</a>
+                </div>
+
+                <div class="sobre">
+                    <h4 class="cor_tema">Sobre</h4>
+                    <a href="../Footer/sobre.html" target="_blank">Sobre</a>
+                    <a href="../blogue/home.html" target="_blank">Blogue</a>
+                </div>
+
+
+                <div class="central_apoio">
+                    <h4 class="cor_tema">Central de Apoio</h4>
+                    <a href="../Footer/contacta_nos.html">Contacta-nos</a>
+                    <h6 style="color: white;">info_wasom_upfy_2024@gmail.com</h6>
+                </div>
+            </div>
+
+        </div>
+        <hr style="background-color: #ff00a2;">
+
+        <div class="footer_end"
+            style="display: flex; justify-content: space-around; align-items: center; padding: 5px;">
+            <div>
+                <p></p>
+                <p style="color: white;"></p>
+                <p style="color: white;">&copy; Copyright 2024 <br><strong><a href="" target="_blank">Voosoft (click
+                            aqui para acessar o Linkedin)</a> </strong></p>
+            </div>
+
+            <div style="display: flex; gap: 20px;">
+                <a href="../Footer/termos_de_uso.html" target="_blank">Termos de Uso</a>
+                <a href="../Footer/politica_de_privacidade.html" target="_blank">Privacidade</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

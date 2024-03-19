@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasom Upfy </title>
+    <link rel="stylesheet" href="../bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../Imagens/logo2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="../estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <script src="../JavaScript.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="../bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" id="inicio">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand" href="home.html"><img class="" src="../Imagens/Wasom Upfy.png" alt=""
+                        width="80px" height="65px"
+                        style="border-radius: 50%; background: linear-gradient(-360deg, black, #c71585);"></a>
+                <!-- menu sanduíche (para smartphone) -->
+                <button class="navbar-toggler fundo_icon" data-bs-toggle="collapse" data-bs-target="#menu-links">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-list fundo_menu" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                        </svg>
+                    </span>
+                </button>
+                <style>
+                    @media screen and (min-width: 1000px) {
+
+                        .container_ul {
+                            display: flex;
+                            justify-content: right;
+                        }
+
+                    }
+
+                    @media screen and (max-width: 759px) {
+
+                        .container_img {
+                            justify-content: center;
+                            margin-top: 15px;
+                            margin-bottom: 20px;
+                        }
+
+                        .list_link {
+                            display: flex;
+                            flex-direction: column;
+
+                        }
+
+                        .get-in {
+                            width: 100%;
+
+                        }
+                    }
+                </style>
+                <!-- menu de links -->
+                <div class="collapse navbar-collapse container_ul" id="menu-links">
+
+                    <div>
+                        <ul class="navbar-nav me-auto">
+                            <li class="nav-item"><a style="color:rgba(255, 255, 255, 0.425);" href="#"
+                                    class="nav-link">Blogue</a></li>
+                            <li class="nav-item"><a href="perfil.html" class="nav-link color">Perfil</a></li>
+
+                            <li class="nav-item"><a href="#ouvidos" class="nav-link color">+ Ouvidos</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link color">Rendimentos</a></li>
+                            <li class="nav-item"><a href="estatisticas.html" class="nav-link color">Estatísticas</a>
+                            </li>
+
+                            <li class="nav-item"><a href="pagamentos.html" class="nav-link color">Pagamentos</a></li>
+                            <li class="nav-item"><a href="Footer/contacta_nos.html" class="nav-link color">Contacta-nos</a></li>
+
+                            <li class="nav-item dropdown">
+
+                                <!-- botão do menu suspenso -->
+                                <a class="nav-link dropdown-toggle color" href="detalhes_album.html" role="button"
+                                    data-bs-toggle="dropdown">
+                                    + Músicas
+                                </a>
+
+                                <!-- links ocultos -->
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="itens_music" href="detalhes_album.html">
+                                            Adicionar Álbum</a>
+                                    </li>
+                                    <li>
+                                        <a class="itens_music" href="adicionar_faixas.html">
+                                            Adicionar Faixas</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+
+                            <div class="list_link2">
+                                <li class="nav-item"><a href="#" class="nav-link color get-in2" data-bs-toggle="modal"
+                                        data-bs-target="#meu-primeiro-modal">Terminar Sessão</a></li>
+                            </div>
+
+
+                        </ul>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="fundo_usuarios">
+        <div class="container_titulo_US" style="display: flex; flex-wrap: wrap;  margin-bottom: 40px;">
+            <h2 style="text-align: center; padding-top: 20px; color: white;">Seus Ultimos
+                lançamentos</h2>
+            <div>
+                <div class="container_link2" style=" background-color: #c71585;">
+                    <a href="lista_de_faixas(albuns).html">Abrir Álbuns</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="container_music">
+
+            <div class="card text-white" style="background-color: transparent; backdrop-filter: blur(20px); width: 200px;
+                        box-shadow: 0 0 30px black; margin-bottom: 10px;">
+                <img class="card-img-top" src="../Imagens/Wasom Upfy.png" alt="Capa da música" width="200" height="150">
+                <div class="card-body">
+
+                    <h5 class="card-title-lg">Título da Música</h5>
+                    <p class="card-subtitle">Artista</p>
+
+                    <audio src="../Imagens/INDUSTRY_BABY[DodoConverter.com].mp3" controls
+                        style="width: 100%; margin-top: 20px;"></audio>
+                </div>
+            </div>
+
+            <div class="card text-white" style="background-color: transparent; backdrop-filter: blur(20px); width: 200px;
+            box-shadow: 0 0 30px black; margin-bottom: 10px;">
+                <img class="card-img-top" src="../Imagens/Wasom Upfy.png" alt="Capa da música" width="200" height="150">
+                <div class="card-body">
+
+                    <h5 class="card-title-lg">Título da Música</h5>
+                    <p class="card-subtitle">Artista</p>
+
+                    <audio src="../Imagens/INDUSTRY_BABY[DodoConverter.com].mp3" controls
+                        style="width: 100%; margin-top: 20px;"></audio>
+                </div>
+            </div>
+            <div class="container_link2" style="width: 95%; background-color: #c71585;">
+                <a href="lista_de_faixas(albuns).html">Abrir Álbuns, com as suas Faixas</a>
+            </div>
+        </div>
+
+        <hr style="background-color: #c71585; padding: 2px; margin: 30px;">
+
+        <h2 style="text-align: center; margin-bottom: 20px; color: white;" id="ouvidos">+ Ouvidas</h2>
+
+        <div class="table-responsive">
+            <table class="table" style="background-color: transparent; backdrop-filter: blur(40px);
+             box-shadow: 0 0 30px black;">
+                <thead style="color: #ff00a2;">
+                    <th style="font-size: 20px;">Posição</th>
+                    <th style="font-size: 20px;">Título</th>
+                    <th style="font-size: 20px;">Artista</th>
+                    <th style="font-size: 20px;">Streams</th>
+                    <th style="font-size: 20px;">+ Ouvidas em...</th>
+                    <th style="font-size: 20px;">Data</th>
+
+
+                </thead>
+
+                <tbody style="color: white;">
+                    <tr>
+                        <td>01</td>
+                        <td>Beat</td>
+                        <td>Cristiano Amadeu</td>
+                        <td>5.000</td>
+                        <td>YouTube</td>
+                        <td>20/01/2024</td>
+                    </tr>
+
+                    <tr>
+                        <td>01</td>
+                        <td>Beat</td>
+                        <td>Cristiano Amadeu</td>
+                        <td>5.000</td>
+                        <td>YouTube</td>
+                        <td>20/01/2024</td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>
+
+
+
+    <footer style="padding: 0 0 20px 0;">
+        <div class="respons_grid"
+            style="display: flex; gap: 30px; justify-content: center; margin-top: 10px; flex-wrap: wrap; align-items: center;">
+            <a href="https://facebook.com/wasom.official_" target="_blank"><img class="hight" style="height: 50px;"
+                    src="../Imagens/facebook.png" alt=""></a>
+            <a href="https://instagram.com/wasomupfy_" target="_blank"><img class="hight" style="height: 50px;"
+                    src="../Imagens/instagram.png" alt=""></a>
+            <a href="https://open.spotify.com/user/31k2nxsblwvufx5lxgbn5lc3d4sq?si=5QbkU1dhRSOwr6pQd4-XLw_"
+                target="_blank"><img class="hight" style="height: 50px;" src="../Imagens/spotify.png" alt=""></a>
+            <a href="https://whatsapp.com/channel/0029VaCEDqo59PwWpU0nGa04_" target="_blank"><img class="hight"
+                    style="height: 50px;" src="../Imagens/whatsapp.png" alt=""></a>
+            <a href="https://threads.net/@wasomupfy_" target="_blank"><img class="hight"
+                    style="height: 60px; border-radius: 50%;" src="../Imagens/threads.png" alt=""></a>
+            <a href="https://youtube.com/@WasomUpfy" target="_blank"><img class="hight" style="height: 50px;"
+                    src="../Imagens/youtube.png" alt=""></a>
+        </div>
+        <hr style="background-color: #ff00a2;">
+
+        <div class="container_footer">
+            <div class="footer container">
+
+                <div class="sobre">
+                    <h4 class="cor_tema">Sobre</h4>
+                    <a href="Footer/sobre.html" target="_blank">Sobre</a>
+                    <a href="#" target="_blank" style="color:#ff00a2">Blogue</a>
+                </div>
+
+
+                <div class="central_apoio">
+                    <h4 class="cor_tema">Central de Apoio</h4>
+                    <a href="Footer/contacta_nos.html">Contacta-nos</a>
+                    <h6 style="color: white;">info_wasom_upfy_2024@gmail.com</h6>
+                </div>
+            </div>
+
+        </div>
+        <hr style="background-color: #ff00a2;">
+
+        <div class="footer_end"
+            style="display: flex; justify-content: space-around; align-items: center; padding: 5px;">
+            <div>
+                <p></p>
+                <p style="color: white;"></p>
+                <p style="color: white;">&copy; Copyright 2024 <br><strong><a href="" target="_blank">Voosoft (click
+                            aqui para acessar o Linkedin)</a> </strong></p>
+            </div>
+
+            <div style="display: flex; gap: 20px;">
+                <a href="Footer/termos_de_uso.html" target="_blank">Termos de Uso</a>
+                <a href="Footer/politica_de_privacidade.html" target="_blank">Privacidade</a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+<div class="modal fade container" id="meu-primeiro-modal" tabindex="-1">
+    <!-- caixa de diálogo -->
+    <div class="modal-dialog">
+        <!-- conteúdo do modal -->
+        <div class="modal-content fundo_modal">
+            <!-- cabeçalho do modal -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="titulo-modal">
+                    <a class="navbar-brand me-5" href="#"><img class="" src="../Imagens/Wasom Upfy.png" alt=""
+                            width="80px" height="65px"
+                            style="border-radius: 50%; background: linear-gradient(-360deg, black, #c71585);"></a>
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <!-- botão fechar: x -->
+            </div>
+
+            <!-- corpo do modal -->
+            <div class="modal-body">
+                <h4 style="text-align: center; color: white;">Tens a Certeza que queres Terminar a Sessão?</h4>
+            </div>
+
+            <!-- rodapé do modal -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary"><a style="text-decoration: none; color: white;"
+                        href="../index.html">Sim</a></button>
+                <button type="button" class="btn btn-secondary"
+                    data-bs-dismiss="modal">Não</button><!-- botão fechar -->
+
+            </div>
+
+        </div> <!-- /modal-content -->
+    </div> <!-- /modal-dialog -->
+</div>
+
+</html>
